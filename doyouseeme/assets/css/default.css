@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+row{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.cjs-body {
+  width: 100%;
+}
+
+.cjs-card-container {
+  width: 33.33%;
+  position: relative;
+  float: left;
+  transform: rotateY(0deg);
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transition: transform 1.7s ease;
+}
+
+.cjs-card-container:hover {
+  transform: rotateY(180deg);
+  transform-origin: center;
+  transform-style: preserve-3d;
+}
+
+.cjs-card-front {
+  width: 100%;
+  padding: 75px;
+  -webkit-backface-visibility: hidden;
+ backface-visibility: hidden;
+ transform: rotateY(180deg);
+ transform-origin: center;
+}
+
+.cjs-card-back {
+  width: 100%;
+  padding: 75px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.cjs-smoke-container {
+  z-index: 0;
+  display: none;
+}
+
+.cjs-shufflebutton {
+  position: relative;
+  float: cnetre;
+  width: 150px;
+  left: 650px;
+}
